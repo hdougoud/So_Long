@@ -6,7 +6,7 @@
 /*   By: hdougoud <hdougoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 17:58:15 by hdougoud          #+#    #+#             */
-/*   Updated: 2025/01/12 17:24:42 by hdougoud         ###   ########.fr       */
+/*   Updated: 2025/03/27 11:13:17 by hdougoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,12 +44,12 @@ static void	load_grass_2(t_minilx *mlx)
 static void	load_grass_1(t_minilx *mlx)
 {
 	mlx->sprites->grass->frames[0] = mlx_xpm_file_to_image(mlx->mlx,
-			"Sprites/Grass/Grass_01.xpm",
+			"./Sprites/Grass/Grass_01.xpm",
 			&mlx->sprites->grass->x, &mlx->sprites->grass->y);
 	if (!mlx->sprites->grass->frames[0])
 		show_error(mlx, CANNOT_OPEN_FILE);
 	mlx->sprites->grass->frames[1] = mlx_xpm_file_to_image(mlx->mlx,
-			"Sprites/Grass/Grass_02.xpm",
+			"./Sprites/Grass/Grass_02.xpm",
 			&mlx->sprites->grass->x, &mlx->sprites->grass->y);
 	if (!mlx->sprites->grass->frames[1])
 		show_error(mlx, CANNOT_OPEN_FILE);
