@@ -6,7 +6,7 @@
 /*   By: hdougoud <hdougoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 18:21:41 by hdougoud          #+#    #+#             */
-/*   Updated: 2025/01/13 20:03:37 by hdougoud         ###   ########.fr       */
+/*   Updated: 2025/09/06 15:21:45 by hdougoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,8 @@ static int	check_movement(int keycode, t_minilx *mlx)
 
 static void	move_player(int keycode, t_minilx *mlx)
 {
+	if (mlx->sprites->player->life <= 0)
+		return ;
 	if (check_movement(keycode, mlx) == 1)
 		return ;
 	put_previous_layer(mlx, mlx->player_pos_x, mlx->player_pos_y);
