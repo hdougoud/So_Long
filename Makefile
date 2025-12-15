@@ -1,4 +1,4 @@
-NAME		= so_long
+NAME		= So_Long
 OS			= $(shell uname -s)
 CC			= cc
 CFLAGS		= -Wall -Werror -Wextra -O3
