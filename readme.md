@@ -7,10 +7,10 @@ The mission is simple: loot every chest, evade or defeat the guardians, and find
 
 ## Features
 
-**Combat System:** Use your Dash to attack and eliminate enemies in your path.
-**Survival Mechanics:** You have 3 health points. Every contact with an enemy costs you a life.
-**Random Biomes:** Every time you start a game, the game randomly chooses between a lush Forest theme or a dark Cave atmosphere.
-**Step Counter:** A real-time movement tracker to challenge you to find the most efficient route.
+* **Combat System:** Use your Dash to attack and eliminate enemies in your path.
+* **Survival Mechanics:** You have 3 health points. Every contact with an enemy costs you a life.
+* **Random Biomes:** Every time you start a game, the game randomly chooses between a lush Forest theme or a dark Cave atmosphere.
+* **Step Counter:** A real-time movement tracker to challenge you to find the most efficient route.
 
 ## Gameplay Preview
 
