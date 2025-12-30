@@ -66,7 +66,7 @@ make demo
 > Custom maps must use the `.ber` extension and follow standard parsing rules (closed walls, at least one collectible, one spawn, and one exit).
 
 
-## 🎨 Credits
+## Credits
 
 * **Code:** Entirely developed in C by myself as part of the 42 curriculum.
 * **Assets:** A huge thank you to the **itch.io** community for the sprites and textures used in this project.
