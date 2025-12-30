@@ -2,13 +2,13 @@ NAME		= So_Long
 OS			= $(shell uname -s)
 CC			= cc
 CFLAGS		= -Wall -Werror -Wextra -O3
-MACOS_DIR	= mlx/minilibx-macos
-LINUX_DIR	= mlx/minilibx-linux
-LIBFT		= libft/libft.a
+MACOS_DIR	= libs/mlx/minilibx-macos
+LINUX_DIR	= libs/mlx/minilibx-linux
+LIBFT		= libs/libft/libft.a
 LINUX_LIB	= $(LINUX_DIR)/libmlx.a
 MACOS_LIB	= $(MACOS_DIR)/libmlx.a
 
-MAPS 		= maps/map1.ber maps/map2.ber maps/map3.ber maps/map4.ber maps/map5.ber4
+MAPS 		= assets/maps/map1.ber assets/maps/map2.ber assets/maps/map3.ber assets/maps/map4.ber assets/maps/map5.ber
 TEST_DIR	= maps/test_maps/
 TEST		= extention no_collectable.ber no_exit.ber no_player.ber path_collectable.ber \
 			  path_exit.ber permission.ber square.ber surrounded.ber surrounded_2.ber \
@@ -70,13 +70,13 @@ $(MINILIBX):
 	$(MAKE) -C $(LIB_DIR)
 
 $(LIBFT):
-	$(MAKE) -C libft
+	$(MAKE) -C libs/libft
 
 $(OBJ_DIR):
 	@mkdir $(OBJ_DIR)
 
 $(NAME): $(MINILIBX) $(LIBFT) $(OBJECTS)
-	$(CC) $(OBJECTS) $(OS_FLAGS) -Llibft -lft -o $(NAME)
+	$(CC) $(OBJECTS) $(OS_FLAGS) -Llibs/libft -lft -o $(NAME)
 	echo "$(GREEN)$(NAME)		compiled!$(RESET)"
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
@@ -84,17 +84,17 @@ $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 
 clean:
 	rm -rf $(OBJ_DIR)
-	$(MAKE) -C libft clean
+	$(MAKE) -C libs/libft clean
 	$(MAKE) -C $(LIB_DIR) clean
 
 fclean: clean
 	rm -f $(NAME)
-	rm -f libft/libft.a
+	rm -f $(LIBFT)
 	rm -f $(MINILIBX)
 
 re: fclean all
 
-run_maps: $(NAME)
+demo: all
 	@for level in $(MAPS); do \
 		echo "Running $$level"; \
 		./$(NAME) $$level; \

@@ -6,7 +6,7 @@
 /*   By: hdougoud <hdougoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/12 15:24:00 by hdougoud          #+#    #+#             */
-/*   Updated: 2025/03/27 11:20:39 by hdougoud         ###   ########.fr       */
+/*   Updated: 2025/12/30 03:27:08 by hdougoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,27 +15,27 @@
 static void	load_enemy_idle(t_minilx *mlx)
 {
 	mlx->sprites->enemy->frames[0] = mlx_xpm_file_to_image(mlx->mlx,
-			"Sprites/Slime/Idle/Slime_1.xpm",
+			"assets/sprites/Slime/Idle/Slime_1.xpm",
 			&mlx->sprites->enemy->x, &mlx->sprites->enemy->y);
 	if (!mlx->sprites->enemy->frames[0])
 		show_error(mlx, CANNOT_OPEN_FILE);
 	mlx->sprites->enemy->frames[1] = mlx_xpm_file_to_image(mlx->mlx,
-			"Sprites/Slime/Idle/Slime_2.xpm",
+			"assets/sprites/Slime/Idle/Slime_2.xpm",
 			&mlx->sprites->enemy->x, &mlx->sprites->enemy->y);
 	if (!mlx->sprites->enemy->frames[1])
 		show_error(mlx, CANNOT_OPEN_FILE);
 	mlx->sprites->enemy->frames[2] = mlx_xpm_file_to_image(mlx->mlx,
-			"Sprites/Slime/Idle/Slime_3.xpm",
+			"assets/sprites/Slime/Idle/Slime_3.xpm",
 			&mlx->sprites->enemy->x, &mlx->sprites->enemy->y);
 	if (!mlx->sprites->enemy->frames[2])
 		show_error(mlx, CANNOT_OPEN_FILE);
 	mlx->sprites->enemy->frames[3] = mlx_xpm_file_to_image(mlx->mlx,
-			"Sprites/Slime/Idle/Slime_4.xpm",
+			"assets/sprites/Slime/Idle/Slime_4.xpm",
 			&mlx->sprites->enemy->x, &mlx->sprites->enemy->y);
 	if (!mlx->sprites->enemy->frames[3])
 		show_error(mlx, CANNOT_OPEN_FILE);
 	mlx->sprites->enemy->frames[4] = mlx_xpm_file_to_image(mlx->mlx,
-			"Sprites/Slime/Idle/Slime_5.xpm",
+			"assets/sprites/Slime/Idle/Slime_5.xpm",
 			&mlx->sprites->enemy->x, &mlx->sprites->enemy->y);
 	if (!mlx->sprites->enemy->frames[4])
 		show_error(mlx, CANNOT_OPEN_FILE);
@@ -44,17 +44,17 @@ static void	load_enemy_idle(t_minilx *mlx)
 static void	load_enemy_death_2(t_minilx *mlx)
 {
 	mlx->sprites->enemy->dth_frames[3] = mlx_xpm_file_to_image(mlx->mlx,
-			"Sprites/Slime/Death/Death_4.xpm",
+			"assets/sprites/Slime/Death/Death_4.xpm",
 			&mlx->sprites->enemy->x, &mlx->sprites->enemy->y);
 	if (!mlx->sprites->enemy->dth_frames[3])
 		show_error(mlx, CANNOT_OPEN_FILE);
 	mlx->sprites->enemy->dth_frames[4] = mlx_xpm_file_to_image(mlx->mlx,
-			"Sprites/Slime/Death/Death_5.xpm",
+			"assets/sprites/Slime/Death/Death_5.xpm",
 			&mlx->sprites->enemy->x, &mlx->sprites->enemy->y);
 	if (!mlx->sprites->enemy->dth_frames[4])
 		show_error(mlx, CANNOT_OPEN_FILE);
 	mlx->sprites->enemy->dth_frames[5] = mlx_xpm_file_to_image(mlx->mlx,
-			"Sprites/Slime/Death/Death_6.xpm",
+			"assets/sprites/Slime/Death/Death_6.xpm",
 			&mlx->sprites->enemy->x, &mlx->sprites->enemy->y);
 	if (!mlx->sprites->enemy->dth_frames[5])
 		show_error(mlx, CANNOT_OPEN_FILE);
@@ -63,17 +63,17 @@ static void	load_enemy_death_2(t_minilx *mlx)
 static void	load_enemy_death(t_minilx *mlx)
 {
 	mlx->sprites->enemy->dth_frames[0] = mlx_xpm_file_to_image(mlx->mlx,
-			"Sprites/Slime/Death/Death_1.xpm",
+			"assets/sprites/Slime/Death/Death_1.xpm",
 			&mlx->sprites->enemy->x, &mlx->sprites->enemy->y);
 	if (!mlx->sprites->enemy->dth_frames[0])
 		show_error(mlx, CANNOT_OPEN_FILE);
 	mlx->sprites->enemy->dth_frames[1] = mlx_xpm_file_to_image(mlx->mlx,
-			"Sprites/Slime/Death/Death_2.xpm",
+			"assets/sprites/Slime/Death/Death_2.xpm",
 			&mlx->sprites->enemy->x, &mlx->sprites->enemy->y);
 	if (!mlx->sprites->enemy->dth_frames[1])
 		show_error(mlx, CANNOT_OPEN_FILE);
 	mlx->sprites->enemy->dth_frames[2] = mlx_xpm_file_to_image(mlx->mlx,
-			"Sprites/Slime/Death/Death_3.xpm",
+			"assets/sprites/Slime/Death/Death_3.xpm",
 			&mlx->sprites->enemy->x, &mlx->sprites->enemy->y);
 	if (!mlx->sprites->enemy->dth_frames[2])
 		show_error(mlx, CANNOT_OPEN_FILE);

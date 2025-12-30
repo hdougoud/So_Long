@@ -6,7 +6,7 @@
 /*   By: hdougoud <hdougoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 18:34:51 by hdougoud          #+#    #+#             */
-/*   Updated: 2025/03/27 11:15:14 by hdougoud         ###   ########.fr       */
+/*   Updated: 2025/12/30 03:30:43 by hdougoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ int	main(int argc, char **argv)
 {
 	t_minilx	mlx;
 
-	chdir("/home/hdougoud/Documents/So_Long/");
 	init_minilx(&mlx);
 	if (argc != 2)
 		show_error(&mlx, WRONG_ARGUMENTS);

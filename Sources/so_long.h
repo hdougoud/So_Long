@@ -6,14 +6,14 @@
 /*   By: hdougoud <hdougoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/17 10:40:14 by hdougoud          #+#    #+#             */
-/*   Updated: 2025/01/14 11:39:39 by hdougoud         ###   ########.fr       */
+/*   Updated: 2025/12/30 03:36:00 by hdougoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
-# include "../libft/libft.h"
+# include "../libs/libft/libft.h"
 # include <errno.h>
 # include <time.h>
 # include <mlx.h>
